@@ -1,11 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-dm-serif: 'DM Serif Display', serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +28,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.header {
+  @apply object-scale-down scale-y-150 uppercase [letter-spacing:-0.1rem] [word-spacing:0.07rem] font-serif;
 }
